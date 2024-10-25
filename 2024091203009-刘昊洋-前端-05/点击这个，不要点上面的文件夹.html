@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半缘のblogのregister-page</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="pre-box">
+            <h1>WELCOME</h1>
+            <h3>等候多时</h3>
+            <div class="img-box"><img src="personal-homepage/img/profile-photo.jpg" alt=""></div>
+        </div>
+        <div class="register-form">
+            <div class="title-box">
+                <h1>登录</h1>
+            </div>
+            <div class="input-box">
+                <input type="text" id="username" placeholder=" 用户名:banyuan">
+                <input type="password" id="password" placeholder=" 密码:banyuanlhy">
+            </div>
+            <div class="button-box">
+                <button>登录</button>
+                <p>没有账号？去注册</p>
+            </div>
+        </div>
+        <div class="login-form">
+            <div class="title-box">
+                <h1>注册</h1>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder=" 用户名">
+                <input type="password" placeholder=" 密码">
+                <input type="确认密码" placeholder=" 确认密码">
+            </div>
+            <div class="button-box">
+                <button>注册</button>
+                <p>已有账号？去登录</p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // 使用 document.querySelectorAll 选择所有的 <p> 元素  
+        const paragraphs = document.querySelectorAll('p');
+        const box = document.querySelector('.box')
+        const preBox = document.querySelector('.pre-box')
+        const img = document.querySelector('img')
+        let flag = true
+        // 遍历 NodeList 并为每个 <p> 元素添加点击事件监听器  ，用循环也行
+        paragraphs.forEach(function (paragraph) {
+            paragraph.addEventListener('click', function () {
+                if (flag) {
+                    preBox.style.backgroundColor = 'skyblue'
+                    preBox.style.transform = 'translateX(525px)'
+                    box.style.backgroundColor = '#f3c3cb'
+                    img.src = 'personal-homepage/img/profile-photo2.jpg'
+                    flag = !flag
+                }
+                else {
+                    preBox.style.backgroundColor = 'rgb(255, 192, 203)'
+                    preBox.style.transform = 'translateX(0px)'
+                    box.style.backgroundColor = 'skyblue'
+                    img.src = 'personal-homepage/img/profile-photo.jpg'
+                    flag = !flag
+                }
+                // innerHTML无法获取表单里面的元素
+
+
+            });
+        });
+        const btn = document.querySelector('button')
+        const LFbtn = document.querySelector('.login-form button')
+        LFbtn.addEventListener('click', function () { alert('温馨提示：本人目前学艺不精，所以暂时注册功能用不了哈。请点击“已有账号？去登陆”') })
+        btn.addEventListener('click', handleLogin)
+        function handleLogin() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var correctUsername = 'banyuan';
+            var correctPassword = 'banyuanlhy';
+
+
+            if (username === correctUsername && password === correctPassword) {
+                alert('登陆成功!');
+                window.location.href = 'personal-homepage/personal-homepage.html';
+                return false;
+            } else {
+                alert('用户名或密码错误！');
+                alert('唯一用户名(也就是我本人)：banyuan , 密码：banyuanlhy');
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

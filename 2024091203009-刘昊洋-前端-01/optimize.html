@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微光娘不见了？！</title>
+    <style>
+        h2 {
+            text-align: center;
+            width: 300px;
+            height: 60px;
+            background-image: url(img/780.jpg);
+            background-size: 100%;
+            margin-left: 160px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            color: rgb(0, 51, 255);
+        }
+
+        .odd-number,
+        .photo {
+            background-color: rgb(246, 246, 247);
+        }
+
+        .even-number,
+        .missing-person {
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* 教训1：<ul> 的样式设置 margin: 0 auto; 试图使其居中，但由于 <ul> 是块级元素且默认宽度为100%，在没有指定固定宽度的情况下，这不会起作用。 
+        ul {
+            margin: 0 auto;
+        }*/
+        .notice {
+
+            background-size: contain;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-collapse: collapse;
+
+        }
+
+        .notice-list {
+            margin-bottom: 0;
+
+
+
+        }
+
+
+        li {
+            padding-left: 40px;
+            display: block;
+            border: 1px solid #000;
+
+
+        }
+
+        .missing-person {
+
+            padding-left: 40px;
+            margin-left: 40px;
+            border: 1px solid #000;
+            padding-bottom: 20px;
+        }
+
+        .missing-person-table {
+            border-collapse: collapse;
+            /* 使用collapse来消除表格单元格之间的空隙 */
+            width: 80%;
+            /* 使用百分比宽度来适应不同屏幕尺寸 */
+            max-width: 600px;
+            /* 设置最大宽度 */
+            /* border: 1px solid pink; */
+            text-align: center;
+
+
+
+        }
+
+        .missing-person-table th,
+        .missing-person-table td {
+            padding: 15px;
+            border: 1px solid skyblue;
+            background-color: #d0d2d34c;
+            /* 为单元格添加边框 */
+        }
+
+
+
+        .photo {
+            margin-left: 40px;
+            border: 1px solid #000;
+            padding: 0 80px 0 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="notice">
+        <h2>告示栏</h2>
+        <ul class="notice-list">
+            <li class="odd-number">
+                <h3>1.微光工作室现已开始招新，小伙伴们速速加入吧！</h3>
+            </li>
+            <li class="even-number">
+                <h3>2.听说微光里面一堆二次元，crazy！！</h3>
+            </li>
+            <li class="odd-number">
+                <h3>3.有关人员透露，加入微光有神秘大礼等着你！！！</h3>
+            </li>
+
+        </ul>
+        <div class="missing-person">
+            <h3>4.寻人启事</h3>
+            <table class="missing-person-table">
+                <tr>
+                    <th>姓名</th>
+                    <td>微光娘</td>
+                </tr>
+                <tr>
+                    <th>性别</th>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <th>年龄</th>
+                    <td>刚满18岁</td>
+                </tr>
+                <tr>
+                    <th>特征描述</th>
+                    <td>身高160cm，体型偏瘦，长长的银白发，皮肤白嫩嫩，右眼角有一颗美人痣。</td>
+                </tr>
+                <tr>
+                    <th>失踪时间</th>
+                    <td>2024年10月1日</td>
+                </tr>
+                <tr>
+                    <th>失踪地点</th>
+                    <td>电子科技大学沙河校区银杏大道</td>
+                </tr>
+                <tr>
+                    <th>失踪时穿着</th>
+                    <td>白色T恤，黑色JK，长袜子，白色运动鞋。</td>
+                </tr>
+                <tr>
+                    <th>联系方式</th>
+                    <td><a href="#">110-xxxx-xxxx（学生会）</a></td>
+                </tr>
+                <tr>
+                    <th>其他信息</th>
+                    <td>日常出没地是三教楼，具有非常典型的宅女属性，偶尔也会到校园里走走，到校园小道间仰望银杏的树顶。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="photo">
+            <h3>5.今日壁纸推荐</h3><img src="img/498.jpg" alt="斗破苍穹">
+        </div>
+    </div>
+
+</body>
+
+</html>

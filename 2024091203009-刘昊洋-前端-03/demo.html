@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        .area1,
+        .area2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 60px;
+            padding: 15px;
+            border: 4px solid #99cbe8;
+            border-radius: 10px;
+        }
+
+        .row1,
+        .row2,
+        .row3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .row1 span {
+            background-color: rgb(126, 202, 116);
+            border: 0 solid #99cbe8;
+            border-radius: 4px;
+        }
+
+        .row2 span {
+            background-color: rgb(184, 196, 229);
+            border: 0 solid #99cbe8;
+            border-radius: 4px;
+        }
+
+        .row3 span {
+            background-color: rgb(251, 255, 85);
+            border: 0 solid #99cbe8;
+            border-radius: 4px;
+        }
+
+        span {
+            width: 60px;
+            height: 30px;
+            background-color: aqua;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="area1">
+            <div class="row1"><span></span><span></span><span></span></div>
+            <div class="row2"><span></span><span></span><span></span></div>
+            <div class="row3"><span></span><span></span><span></span></div>
+        </div>
+        <div class="area2">
+            <div class="row1"><span></span><span></span><span></span></div>
+            <div class="row2"><span></span><span></span><span></span></div>
+            <div class="row3"><span></span><span></span><span></span></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

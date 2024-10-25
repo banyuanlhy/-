@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>半缘のblog</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <!-- 音乐播放器 -->
+    <div class="musicplayer"><audio id="audioPlayer" autoplay controls loop muted preload="metadata"
+            src="song.mp3/bgmusic.mp3"></audio></div>
+    <div class="shell">
+        <!-- navigate菜单栏 -->
+        <ul class="nav">
+            <li class="active" id="logo">
+                <a href="#">
+                    <!-- icon图标 -->
+                    <div class="icon">
+                        <div class="imageBox">
+                            <img src="img/profile-photo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="word">半缘のblog</div>
+                </a>
+            </li>
+            <li>
+                <a href="#live">
+                    <div class="icon">
+                    </div>
+                    <div class="word">LIVE</div>
+                </a>
+            </li>
+            <li>
+                <a href="#movie">
+                    <div class="icon">
+                    </div>
+                    <div class="word">MOVIE</div>
+                </a>
+            </li>
+            <li>
+                <a href="#music">
+                    <div class="icon">
+                    </div>
+                    <div class="word">MUSIC</div>
+                </a>
+            </li>
+            <li>
+                <a href="#books">
+                    <div class="icon">
+                    </div>
+                    <div class="word">books</div>
+                </a>
+            </li>
+            <li>
+                <a href="#Q&A">
+                    <div class="icon">
+                    </div>
+                    <div class="word">Q&A</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#LABEL">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <img src="img/profile-photo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="word">LABEL</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="bgt">
+        <button class="back"><strong>返回</strong></button>
+        <section id="live">
+            <div class="photocontainer">
+                <div class="photo">
+                    <img src="img/11.jpg">
+                    <span>first</span>
+                </div>
+                <div class="photo">
+                    <img src="img/12.jpg">
+                    <span>second</span>
+                </div>
+                <div class="photo">
+                    <img src="img/13.jpg">
+                    <span>third</span>
+                </div>
+                <div class="photo">
+                    <img src="img/14.jpg">
+                    <span>fourth</span>
+                </div>
+            </div>
+        </section>
+        <section id="movie">
+            <div class="photocontainer">
+                <div class="photo">
+                    <img src="img/movie1.avif">
+                    <span>SpiderMan</span>
+                </div>
+                <div class="photo">
+                    <img src="img/movie2.jpg">
+                    <span>魁拔</span>
+                </div>
+                <div class="photo">
+                    <img src="img/movie3.jpg">
+                    <span>肖申克的救赎</span>
+                </div>
+                <div class="photo">
+                    <img src="img/movie4.png">
+                    <span>斗破苍穹</span>
+                </div>
+            </div>
+        </section>
+        <section id="music">
+            <div class="photocontainer">
+                <div class="photo" onclick="playMusic('song.mp3/song1.mp3')">
+                    <img src="img/music1.jpg">
+                    <span>柳叶笺</span>
+                </div>
+                <div class="photo" onclick="playMusic('song.mp3/song2.mp3')">
+                    <img src="img/music2.jpg">
+                    <span>写给父亲</span>
+                </div>
+                <div class="photo" onclick="playMusic('song.mp3/song3.mp3')">
+                    <img src="img/music3.jpg">
+                    <span>主角</span>
+                </div>
+                <div class="photo" onclick="playMusic('song.mp3/song4.mp3')">
+                    <img src="img/music4.jpg">
+                    <span>call of silence</span>
+                </div>
+            </div>
+        </section>
+        <section id="books">
+            <div class="photocontainer">
+                <div class="photo">
+                    <img src="img/book1.jpg">
+                    <span>斗破苍穹</span>
+                </div>
+                <div class="photo">
+                    <img src="img/book2.jpg">
+                    <span>偷偷藏不住</span>
+                </div>
+                <div class="photo">
+                    <img src="img/book3.jpg">
+                    <span>完美世界</span>
+                </div>
+                <div class="photo">
+                    <img src="img/book4.jpg">
+                    <span>三体</span>
+                </div>
+            </div>
+        </section>
+        <section id="Q&A">
+            <div class="photocontainer">
+                <div class="photo">
+                    <div class="QA">
+                        <div class="mainbutton">
+                            <div class="bt">这里是提问区</div>
+                            <div class="nr">但目前来看好像没什么问题</div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                    </div>
+                    <span>ABOUT 大学生活</span>
+                </div>
+                <div class="photo">
+                    <div class="QA">
+                        <div class="mainbutton">
+                            <div class="bt">这里是提问区</div>
+                            <div class="nr">但目前来看好像没什么问题</div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                    </div>
+                    <span>ABOUT 情感经历</span>
+                </div>
+                <div class="photo">
+                    <div class="QA">
+                        <div class="mainbutton">
+                            <div class="bt">这里是提问区</div>
+                            <div class="nr">但目前来看好像没什么问题</div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                    </div>
+                    <span>ABOUT 游戏</span>
+
+                </div>
+                <div class="photo">
+                    <div class="QA">
+                        <div class="mainbutton">
+                            <div class="bt">这里是提问区</div>
+                            <div class="nr">但目前来看好像没什么问题</div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                        <div class="mainbutton">
+                            <div class="bt"></div>
+                            <div class="nr"></div>
+                        </div>
+                    </div>
+                    <span>.......</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="LABEL">
+            <div class="labeltext">Labels and mottos:<br>“我的时代还没有到来<br>有的人死后方生”</div>
+        </section>
+    </div>
+    <div class="container">
+
+        <section id="img-one">
+            <div class="glassbg">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="glasshome">
+                <div class="homeimg"><img src="img/profile-photo.jpg" alt=""></div>
+            </div>
+        </section>
+        <section class="content-one">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>About Myseslf</h2>
+                    <p>诸位前端贤士，晚辈名为刘昊洋，乃新入此行之小生，对代码之道尚在蹒跚学步。我虽初出茅庐，然对HTML、CSS、JavaScript诸般技艺，怀有满腔热忱。我志在以代码绘世界，以界面悦人心。</p>
+                    <p>
+                    <div><strong> Handsome ,</strong><em> Humorous </em></div>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-two">
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>Living</h2>
+                    <p>自我入大学以来，生活日渐简朴。朝夕之间，无非是寝食、敲代码、听讲而已。日复一日，循环往复，寝食、敲代码、听讲，寝食、敲代码、听讲也。
+                    </p>
+                    <p>
+                    <div> Eating , <strong> Classing ,</strong><em> Type-The-Code </em></div>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-three">Gl
+            <div class="text-box">
+                <div class="cnt">
+                    <h2>Reasons for choosing Glimmer</h2>
+                    <p>微光工作室，氛围和乐，深得我心。其荣誉与奖项，光彩夺目，令人向往。更有其口号“心有微光，不惧黑暗”，深感共鸣，激励人心。至于招新之题，开启甚早，仿佛为众中之先。因此，当我一见微光二字，便决意投身其中
+                    </p>
+                    <p>
+                    <div> Atmosphere ,<strong> Awords ,</strong><em> Slogsn </em></div>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="img-two" class="img">
+            <h1>THOUGHTS:</h1><br>
+            <h2>这是我的第一个个人主页，设计它时遍历了挫折，但也满载着乐趣。<br>或许它标志着我大学的一个开始，现在的它并不完善，在日后的4年里，它会伴随我一起成长，一起进步。<br>生活满地鸡毛，有这样一个地方承载我的悲喜，已是人生幸运
+            </h2>
+        </section>
+        <section id="footer">
+            <img src="img/footer.jpg" alt="">
+            <div class="ray" id="ray1"></div>
+            <div class="ray" id="ray2"></div>
+            <div class="ray" id="ray3"></div>
+            <div class="ray" id="ray4"></div>
+            <div class="ray" id="ray5"></div>
+        </section>
+
+    </div>
+    <script>
+        // 加载成功后弹出
+        window.onload = function () {
+            alert('右下角可以打开背景音乐，左侧栏中的music也可以点击播放歌曲噢')
+        }
+        let navLi = document.querySelectorAll(".nav li");
+        // 遍历navLi中的每个元素，并移除它们的active类。然后，给当前触发事件的元素（this）添加active类。
+        function activeLink() {
+            navLi.forEach((item) => item.classList.remove("active"));
+            this.classList.add("active");
+        }
+        // 为navLi中的每个元素添加了一个点击事件监听器。当点击事件发生时，会调用activeLink函数。
+        navLi.forEach((item) => item.addEventListener("click", activeLink));
+        let nav = document.querySelector('.nav')
+        let bgt = document.querySelector('.bgt')
+        let btn = document.querySelector('.back')
+        let textback = document.querySelector('.bgt .labeltext')
+        nav.addEventListener('click', function () {
+            bgt.style.zIndex = '4';
+            bgt.style.width = '100vw'
+            textback.style.fontSize = "8vw"
+        });
+        btn.addEventListener('click', function () {
+            bgt.style.width = '0vw'
+            textback.style.fontSize = "0"
+            bgt.style.zIndex = '-1';
+        })
+        function playMusic(src) {
+            var audio = document.getElementById("audioPlayer");
+            audio.src = src;
+            audio.volume = 0.5;
+            audio.play();
+        }
+
+    </script>
+</body>
+
+
+
+</html>
